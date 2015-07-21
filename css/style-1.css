@@ -1,0 +1,304 @@
+*{
+    border: 0;
+    list-style-type: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    text-decoration: none;
+}
+@font-face {
+	font-family: 'HelveticaNeue-Light';
+	src: url('fonts/HelveticaNeue-Light.eot');
+	src: local('HelveticaNeue-Light'), url('fonts/HelveticaNeue-Light.woff') format('woff'), url('fonts/HelveticaNeue-Light.ttf') format('truetype'), url('fonts/HelveticaNeue-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeue-CondensedBold';
+	src: url('fonts/HelveticaNeue-CondensedBold.eot');
+	src: local('HelveticaNeue-CondensedBold'), url('fonts/HelveticaNeue-CondensedBold.woff') format('woff'), url('fonts/HelveticaNeue-CondensedBold.ttf') format('truetype'), url('fonts/HelveticaNeue-CondensedBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html,
+body{
+    height: 768px;
+}
+body{
+    color: #333;
+    font: 16px "HelveticaNeue-Light", Tahoma, sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+    display:block;
+}
+textarea{
+    resize: vertical;
+}
+input[type="button"],
+input[type="submit"],
+button{
+    cursor: pointer;
+}
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="email"],
+input[type="tel"]{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+h1, h2, h3, h4{
+    font-weight: normal;
+}
+/*End of reset*/
+
+/* header */
+.header {
+    background: url(../images/common/header.png) repeat-x 0 0;
+    background-size: 1024px 98px;
+    height: 98px;
+    display: block;
+}
+.header-title {
+    color: #2e8ac8;
+    font-weight: bold;
+    font-family: "HelveticaNeue-CondensedBold","HelveticaNeue Narrow", Tahoma, sans-serif;
+    font-size: 36px;
+    padding: 26px 20px 0 40px;
+}
+/*wrapper*/
+
+#wrapper {
+    height: 768px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 1024px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    height: 574px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+.container h2 {
+    position: absolute;
+    color: #2e8ac8;
+    font-size: 24px;
+}
+.container h2.title-1 {
+    left: 43px;
+    top: 17px;
+}
+.container h2.title-2 {
+    left: 43px;
+    top: 6px;
+    display: none;
+}
+.container h2.title-3 {
+    left: 43px;
+    top: 0px;
+    line-height: 24px;
+    display: none;
+}
+.container h2.title-4 {
+    left: 43px;
+    top: 17px;
+    display: none;
+}
+.container h2.title-5 {
+    left: 43px;
+    top: 17px;
+    display: none;
+}
+.container h2.title-6 {
+    left: 43px;
+    top: 17px;
+    display: none;
+}
+.middle {
+    width: 943px;
+    height: 484px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 10px 0 0 #000;
+    -webkit-box-shadow: 0 0 10px #a9b9c8;
+    margin: 85px 0 0 40px;
+    background: url(../images/img/arrows.png) 149px 23px no-repeat;
+    background-size: 647px;
+    position: relative;
+}
+.number {
+    position: absolute;
+    width: 160px;
+    height: 90px;
+    text-align: center;
+}
+.number span {
+    color: #2c88c7;
+    font-size: 18px;
+    font-weight: bold;
+}
+.number p {
+    color: #666;
+    font-size: 14px;
+    margin: 15px 0 0;
+}
+.number.num-one {
+    top: 30px;
+    left: 233px;
+}
+.number.num-two {
+    top: 30px;
+    right: 231px;
+}
+.number.num-three {
+    bottom: 16px;
+    left: 177px;
+    width: 272px;
+    height: 70px;
+}
+.number.num-four {
+    bottom: 16px;
+    right: 174px;
+    width: 272px;
+    height: 70px;
+}
+.number.num-three p,
+.number.num-four p {
+    margin: 0 0 16px 0;
+}
+.note {
+    position: absolute;
+    left: 31px;
+    top: 164px;
+    text-align: center;
+    width: 242px;
+    height: 192px;
+    background: url(../images/img/computer.png) 0 0 no-repeat;
+    background-size: contain;
+}
+.note p {
+    color: #2c88c7;
+    font-size: 14px;
+    margin: 140px 0 0;
+    line-height: 17px;
+}
+.safe {
+    position: absolute;
+    left: 395px;
+    top: 143px;
+    text-align: center;
+    width: 153px;
+    height: 192px;
+    background: url(../images/img/safe.png) 15px 0 no-repeat;
+    background-size: 122px;
+}
+.safe p {
+    color: #2c88c7;
+    font-size: 14px;
+    margin: 176px 0 0;
+    line-height: 17px;
+}
+.logos {
+    position: absolute;
+    right: 55px;
+    top: 158px;
+    text-align: center;
+    width: 203px;
+    height: 136px;
+    background: url(../images/img/salesforce.png) 0 0 no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+}
+.screen {
+    position: absolute;
+    left: 73px;
+    top: 178px;
+    width: 152px;
+    height: 96px;
+    background: url(../images/img/screen1.png) 0 0 no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    z-index: 1;
+}
+.screen1 {
+    position: absolute;
+    left: 394px;
+    top: 178px;
+    width: 152px;
+    height: 96px;
+    background: url(../images/img/screen2.png) 0 0 no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    z-index: 1;
+    opacity: 0;
+}
+.screen2 {
+    position: absolute;
+    left: 394px;
+    top: 214px;
+    width: 125px;
+    height: 70px;
+    background: url(../images/img/screen3.png) 0 0 no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    z-index: 1;
+    opacity: 0;
+}
+.screen3 {
+    position: absolute;
+    left: 716px;
+    top: 190px;
+    width: 152px;
+    height: 96px;
+    background: url(../images/img/screen2.png) 0 0 no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    opacity: 0;
+    z-index: 1;
+}
+.screen4 {
+    position: absolute;
+    left: 394px;
+    top: 178px;
+    width: 152px;
+    height: 96px;
+    background: url(../images/img/screen1.png) 0 0 no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    z-index: 1;
+    opacity: 0;
+}
+/* footer */
+.footer {
+    background: url(../images/common/footer.png) repeat-x 0 0;
+    background-size: 1024px 96px;
+    height: 96px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*iform cloud*/
+.inform {
+    position: absolute;
+    z-index: 100;
+    top: 200px;
+    left: 200px;
+}
+.inform p {
+    background: url(../images/info-cloud.png) 17px 7px no-repeat;
+    background-size: contain;
+    padding: 50px;
+}
