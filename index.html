@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html>
+   <head>
+      <meta content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width" name="viewport"/>
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta charset="utf-8">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <title>{!POSITION_1}</title>
+      <script type="text/javascript" src="../JSLibrary/js/app.js"></script> 
+      <link rel="stylesheet" href="css/style-1.css">
+      <script src="js/jquery-1.8.1.min.js"></script> 
+      <script type="text/javascript"> 
+         $(document).ready(function(){
+         
+         var move1 = function () {
+          $(".screen").
+         	 animate({"top":"10px"}, 800).
+         	 animate({"left":"394px"}, 800).
+         	 animate({"top":"178px"}, 800);
+         $(".title-1").css("display","none");
+         $(".title-2").css("display","inline");
+         $(".container").off("click");
+         $(".container").click(move2);
+         }
+         var move2 = function () {
+          $(".screen2").
+         	 animate({"top":"10px"}, 800).
+         	 animate({"left":"804px"}, 800).
+         	 animate({"top":"117px"}, 800);
+         $(".title-2").css("display","none");
+         $(".title-3").css("display","inline");
+         
+         setTimeout(function(){ 
+         	$(".screen1").animate({"opacity":"1"}, 500); 
+         	$(".screen2").css("opacity","1");
+         	$(".screen").animate({"opacity":"0"}, 500);
+         }, 0);
+         setTimeout(function(){ 
+         	$(".screen1").animate({"opacity":"0"}, 800);
+         }, 2400);
+         $(".container").off("click");
+         $(".container").click(move3);
+         }
+         var move3 = function () {
+         	$(".title-3").css("display","none");
+             $(".title-4").css("display","inline");
+             $(".screen3").animate({"opacity":"1"}, 500);
+         	$(".container").off("click");
+         	$(".container").click(move4);
+         }
+         var move4 = function () {
+         	$(".title-4").css("display","none");
+             $(".title-5").css("display","inline");
+             $(".screen3").
+         	    animate({"top":"385px"}, 800).
+         		animate({"left":"394px"}, 800).
+         		animate({"top":"178px"}, 800);
+         	setTimeout(function(){ 
+         		$(".screen4").animate({"opacity":"1"}, 800);
+         	}, 2400);
+         	$(".container").off("click");
+         	$(".container").click(move5);
+          }
+         var move5 = function () {
+         	$(".title-5").css("display","none");
+             $(".title-6").css("display","inline");
+             $(".screen3").css("opacity","0");
+         	$(".screen4").
+         	    animate({"top":"385px"}, 800).
+         		animate({"left":"73px"}, 800).
+         		animate({"top":"178px"}, 800);
+         	$(".container").off("click");
+         }
+         
+         $(".container").click(move1);
+         
+         });
+      </script> 
+   </head>
+   <body>
+      <div id="wrapper">
+         <header class="header">
+            <h1 class="header-title">Защита данных</h1>
+         </header>
+         <div class="container">
+            <h2 class="title title-1">Пользователи вводят данные:</h2>
+            <h2 class="title title-2">1. Данные, которые посылают в облачное приложение, перехватываются<br>шлюзом защиты данных:</h2>
+            <h2 class="title title-3">2. Шлюз идентифицирует конфиденциальные данные согласно политике защиты<br>данных компании и токенизирует их. В облако пересылаются только токены,<br>замещающие эти данные</h2>
+            <h2 class="title title-4">3. Пользователь обращается к данным в облаке.</h2>
+            <h2 class="title title-5">3. Шлюз замещает токены на реальные данные</h2>
+            <h2 class="title title-6">4. Шлюз посылает пользователю реальные данные</h2>
+            <div class="middle">
+               <div id="screen" class="screen">screen</div>
+               <div id="screen2" class="screen2">screen</div>
+               <div id="screen1" class="screen1">screen</div>
+               <div id="screen3" class="screen3">screen</div>
+               <div id="screen4" class="screen4">screen</div>
+               <div class="number num-one">
+                  <span>1</span>
+                  <p>Данные облачного<br> приложения замещены</p>
+               </div>
+               <div class="number num-two">
+                  <span>2</span>
+                  <p>Замещенные данные<br>отправлены в облако</p>
+               </div>
+               <div class="number num-three">
+                  <p>Исходные данные извлечены и доступны<br>пользователям для просмотра</p>
+                  <span>4</span>
+               </div>
+               <div class="number num-four">
+                  <p>Замещенные данные возвращены<br>из облачного приложения</p>
+                  <span>3</span>
+               </div>
+               <div class="note">
+                  <p>Облачное приложение,<br>мобильные пользователи,<br>обмен данными компании</p>
+               </div>
+               <div class="safe">
+                  <p>Шлюз защиты данных</p>
+               </div>
+               <div class="logos">logo</div>
+            </div>
+            <!--middle-->
+         </div>
+         <!--container-->
+         <footer class="footer"> 
+         </footer>
+      </div>
+      <!--wrapper-->
+      <div class="inform">
+      	<p>Clickable</br>screen</p>
+      </div>
+   </body>
+</html>
